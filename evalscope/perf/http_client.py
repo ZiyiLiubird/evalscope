@@ -27,6 +27,7 @@ from evalscope.perf.query_parameters import QueryParameters
 from evalscope.perf.server_sent_event import ServerSentEvent
 # for plugin registry
 from evalscope.perf.dashscope_api import DashScopeApiPlugin
+from evalscope.perf.aliyun_api import AliyunScopeApiPlugin
 from evalscope.perf.openai_api import OpenaiPlugin
 from evalscope.perf.datasets.line_by_line import LineByLineDatasetPlugin
 from evalscope.perf.datasets.longalpaca_12k import LongAlpacaDatasetPlugin
@@ -35,6 +36,7 @@ from evalscope.perf.custom_api import CustomPlugin
 from evalscope.perf._logging import logger
 
 __all__ = [
+    AliyunScopeApiPlugin,
     DashScopeApiPlugin,
     OpenaiPlugin,
     CustomPlugin,
